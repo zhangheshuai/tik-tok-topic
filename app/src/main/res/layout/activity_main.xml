@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/uploading_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:maxLines="3"
+        android:textSize="15sp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:background="@null"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@+id/uploading_cover"
+        android:hint="写标题并使用合适话题，能让更多人看到！" />
+
+
+    <TextView
+        android:id="@+id/uploading_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:text="#话题"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/transparent60" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_Topic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</LinearLayout>
